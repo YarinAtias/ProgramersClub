@@ -49,6 +49,3 @@ def negative_decimal_to_binary(number: int):
         index = index + 1
     binary_in_negative = "".join(binary_in_negative)
     return binary_in_negative
-
-
-print(negative_decimal_to_binary(-100))
