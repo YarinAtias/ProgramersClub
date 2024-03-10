@@ -45,7 +45,6 @@ def negative_decimal_to_binary(number: int):
         if current_bit == '0' and remember_1:
             binary_in_negative[7 - index] = '1'
             added_1 = False
-
         index = index + 1
     binary_in_negative = "".join(binary_in_negative)
     return binary_in_negative
