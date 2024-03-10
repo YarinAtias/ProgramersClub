@@ -48,9 +48,6 @@ def find_missing_number(main_list: list):
     missing_number = int(total_sum - list_sum)
     return missing_number
 
-f = pow
-print(f(2, 3))
-
 
 # my_list = [4, 2, 5, 7, 1, 3, 8, 10, 9]
 # print(find_missing_number(my_list))
