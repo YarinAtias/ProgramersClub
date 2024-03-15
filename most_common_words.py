@@ -14,3 +14,4 @@ def print_most_common_words(file: str, N) -> None:
             print(f"{i + 1} - Word '{item[0]}' {item[1]} times ")
         except IndexError:
             break
+
