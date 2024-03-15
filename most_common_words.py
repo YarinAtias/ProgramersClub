@@ -1,4 +1,4 @@
-def print_most_common_words(file: str, N) -> None:
+def print_most_common_words(file: str, N=None) -> None:
     with open(file, 'r') as f:
         file_to_read = f.read()
 
@@ -11,7 +11,6 @@ def print_most_common_words(file: str, N) -> None:
             break
 
         try:
-            print(f"{i + 1} - Word '{item[0]}' {item[1]} times ")
+            print(f"{i + 1} - Word '{item[0]}' {item[1]} times")
         except IndexError:
             break
-
