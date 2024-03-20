@@ -1,6 +1,7 @@
 import re
 import sys
 
+# Gets a string and returns the same string without punctuations
 def remove_non_letters(word):
     return re.sub(r'[^a-zA-Z]', '', word)
 
