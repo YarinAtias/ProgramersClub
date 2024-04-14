@@ -1,5 +1,5 @@
 import requests
-import time
+import os
 
 VIRUS_TOTAL_URL = 'https://www.virustotal.com/vtapi/v2/file/scan'
 VIRUS_TOTAL_API = "5ce0c7eedd86ea281307c7affff6b10ff4106956070c20eb04f39eae2568b3ed"
@@ -36,5 +36,12 @@ def file_scan(my_file):
             print("This file may contain potential threats. Review the analysis report for more details")
 
 
-f = "nitzanim_post.txt"
-file_scan(f)
+
+def all_files_in_directory(dir_path: str, i: int):
+    directory = os.listdir(dir_path)
+    length_dir = len(directory)
+    if i == length_dir:
+        return None
+    print(directory[i])
+    all_files_in_directory(dir_path, i + 1)
+
