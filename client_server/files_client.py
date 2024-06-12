@@ -55,7 +55,7 @@ def upload_files():
                 client_socket.send(END_SESSION_MESSAGE.encode())
                 run_client = False
         else:
-            print("Did not work, try again please.")
+            print("File did not found. Please try again.")
 
 
 def user_choice_func():

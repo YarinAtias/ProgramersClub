@@ -33,7 +33,6 @@ def download_files():
             client_socket.close()
         else:
             if data_received in files_directory:
-                print("Check")
                 run_client = False
                 run_server = False
                 client_socket.send(f"Downloading {data_received}...".encode())
